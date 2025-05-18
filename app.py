@@ -11,14 +11,14 @@ with gr.Blocks(title="Demo Phân Tích Cảm Xúc", theme=gr.themes.Soft()) as d
     """)
     
     with gr.Tabs():
-        create_webcam_tab()
-        create_upload_tab()
+        log_table,chart = create_webcam_tab()
+        upload_log_table,upload_chart = create_upload_tab()
     
     # Tải dữ liệu log ban đầu khi khởi động
-    demo.load(get_log_data, outputs="log_table")
-    demo.load(get_log_data, outputs="upload_log_table")
-    demo.load(create_satisfaction_chart, outputs="chart")
-    demo.load(create_satisfaction_chart, outputs="upload_chart")
+    demo.load(get_log_data, outputs=log_table)
+    demo.load(get_log_data, outputs=upload_log_table)
+    demo.load(create_satisfaction_chart, outputs=chart)
+    demo.load(create_satisfaction_chart, outputs=upload_chart)
 
 # --- Chạy ứng dụng ---
 if __name__ == "__main__":

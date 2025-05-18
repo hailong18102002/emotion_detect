@@ -21,6 +21,7 @@ def create_webcam_tab():
                 get_log_data,
                 outputs=log_table
             )
+    return log_table, chart
 
 def create_upload_tab():
     """Tạo tab tải ảnh lên."""
@@ -41,3 +42,4 @@ def create_upload_tab():
                 get_log_data,
                 outputs=upload_log_table
             )
+    return upload_log_table, upload_chart

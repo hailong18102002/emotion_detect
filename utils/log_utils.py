@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
-from config.constants import LOG_FILE_PATH
+from constants import LOG_FILE_PATH
 from utils.image_utils import get_current_results
 
 def load_log():
