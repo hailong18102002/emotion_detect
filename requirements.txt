@@ -1,0 +1,5 @@
+gradio 
+deepface 
+opencv-python 
+pandas 
+plotly
