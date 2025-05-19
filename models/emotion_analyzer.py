@@ -91,7 +91,7 @@ def analyze_face_emotions(image):
             cv2.rectangle(img_to_draw, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
             # Chuẩn bị text để hiển thị
-            label_text = f"{emotion_vn} ({satisfaction_vn} {satisfaction_icon})"
+            label_text = f"{emotion_vn} ({satisfaction_vn} )"
 
             # Đặt text phía trên bounding box
             text_y = y - 10 if y - 10 > 10 else y + h + 20
