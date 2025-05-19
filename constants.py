@@ -14,7 +14,13 @@ SATISFACTION_LEVELS = {
     "Bình thường": "😐",
     "Không hài lòng": "😞"
 }
-
+FONTS = {
+    "default": {
+        "font_path": "fonts/arial.ttf",
+        "font_size": 20,
+        "color": (255, 255, 255)
+    },
+}
 # Đường dẫn file log
 import os
 LOG_FILE_PATH = os.path.join("data", "emotion_log.csv")
